@@ -1,0 +1,473 @@
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:162: SyntaxWarning: invalid escape sequence '\i'
+  'monthhours': '{\inteval{\\ndays * 24}}',
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:163: SyntaxWarning: invalid escape sequence '\i'
+  'hoursTrimester': '{\inteval{\\ndaysTrimester * 24}}',
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:164: SyntaxWarning: invalid escape sequence '\i'
+  'hoursYear': '{\inteval{\\ndaysYear * 24}}'
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:354: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{row.cluster.lower()}CompletedJobs{tag}{{{row.asDict()['count']}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:354: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{row.cluster.lower()}CompletedJobs{tag}{{{row.asDict()['count']}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:357: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{row.cluster.lower()}FailedJobs{tag}{{{row.asDict()['count']}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:357: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{row.cluster.lower()}FailedJobs{tag}{{{row.asDict()['count']}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:380: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{k.lower()}usedhours{tag}{{{v / 3600}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:380: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{k.lower()}usedhours{tag}{{{v / 3600}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:386: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{k.lower()}Jobs{tag}{{{v}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:386: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{k.lower()}Jobs{tag}{{{v}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:394: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{row.cluster.lower()}JobsEuroHPC{tag}{{{row.asDict()['count']}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:394: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{row.cluster.lower()}JobsEuroHPC{tag}{{{row.asDict()['count']}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:406: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{row.cluster.lower()}usedhoursEuroHPC{tag}{{{row.asDict()['sum(totalJobSeconds)'] / 3600}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:406: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{row.cluster.lower()}usedhoursEuroHPC{tag}{{{row.asDict()['sum(totalJobSeconds)'] / 3600}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:412: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{k}{{{v}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/DATA/statsEHPC_v2_init.py:412: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{k}{{{v}}}\n"
+WARNING: Using incubator modules: jdk.incubator.vector
+Warning: Ignoring non-Spark config property: executor.memory
+Warning: Ignoring non-Spark config property: num.executors
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/03/11 15:24:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 1) / 1]                                                                                [Stage 3:>                                                          (0 + 1) / 1]                                                                                [Stage 7:=============================>                             (1 + 1) / 2]                                                                                [Stage 28:>                                                         (0 + 1) / 1]                                                                                [Stage 31:>                                                         (0 + 1) / 1]                                                                                [Stage 34:>                                                         (0 + 1) / 1]                                                                                [Stage 37:>                                                         (0 + 1) / 1]                                                                                [Stage 51:>                                                         (0 + 1) / 1]                                                                                [Stage 57:>                                                         (0 + 1) / 1]                                                                                [Stage 60:>                                                         (0 + 1) / 1]                                                                                [Stage 77:>                                                         (0 + 1) / 1]                                                                                MONTH : Feb 1 
+ ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+MONTH2 : Jan 0 
+smonth 2026-01-01 -- emonthd 2026-01-31 -- emonth 2026-02-01 -- tmonth 2026-01-01
+FIND SPARK
+/projects/F202500010HPCVLABUMINHO/uminhocp150/ADGD/env-spark/lib/python3.12/site-packages/pyspark
+jobs_Ago.txt
+Process: Ago /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Ago.txt
+jobs_Jul.txt
+Process: Jul /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jul.txt
+jobs_Apr.txt
+Process: Apr /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Apr.txt
+jobs_Sep.txt
+Process: Sep /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Sep.txt
+jobs_Oct.txt
+Process: Oct /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Oct.txt
+jobs_Mar.txt
+Process: Mar /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Mar.txt
+jobs_Jan.txt
+Process: Jan /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jan.txt
+jobs_Feb.txt
+Process: Feb /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Feb.txt
+jobs_Nov.txt
+Process: Nov /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Nov.txt
+jobs_May.txt
+Process: May /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_May.txt
+jobs_Dec.txt
+Process: Dec /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Dec.txt
+jobs_Jun.txt
+Process: Jun /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jun.txt
+===== DATASET SIZE =====
+Total rows: 557488
+===== EXECUTION PLAN: FILTER + GROUPBY =====
+== Parsed Logical Plan ==
+'Aggregate ['cluster], ['cluster, 'count(1) AS count#531]
++- Filter NOT (Agency#487 = LOCAL)
+   +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, Agency#487, OldVNodes#488, VNodes#489L, (cast(ElapsedRaw#19 as bigint) * VNodes#489L) AS totalJobSeconds#490L]
+      +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, Agency#487, OldVNodes#488, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN isnull(AllocTRES#33) THEN cast(NNodes#23 as bigint) ELSE CASE WHEN RLIKE(AllocTRES#33, gres/gpu=(\d+)) THEN cast(regexp_extract(AllocTRES#33, gres/gpu=(\d+), 1) as bigint) ELSE cast((NNodes#23 * 4) as bigint) END END ELSE cast(NNodes#23 as bigint) END AS VNodes#489L]
+         +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, Agency#487, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN ((AllocCPUS#21 % 32) = 0) THEN (cast(AllocCPUS#21 as double) / cast(32 as double)) ELSE ((cast(AllocCPUS#21 as double) / cast(32 as double)) + cast(1 as double)) END ELSE cast(NNodes#23 as double) END AS OldVNodes#488]
+            +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, CASE WHEN StartsWith(Account#20, f) THEN FCT ELSE CASE WHEN StartsWith(Account#20, ee) THEN EHPC ELSE LOCAL END END AS Agency#487]
+               +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#486]
+                  +- Union false, false
+                     :- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, cast(CPUTimeRAW#22 as bigint) AS CPUTimeRAW#76L, NNodes#23, cast(AllocNodes#24 as bigint) AS AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, cast(ReservationId#32 as bigint) AS ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+                     :  +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Ago AS Period#37]
+                     :     +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, CASE WHEN (State#30 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#36]
+                     :        +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, regexp_replace(State#30, CANCELLED(.*), CANCELLED, 1) AS EState#35]
+                     :           +- Relation [JobID#17,JobIDRaw#18,ElapsedRaw#19,Account#20,AllocCPUS#21,CPUTimeRAW#22,NNodes#23,AllocNodes#24,NCPUS#25,Partition#26,TotalCPU#27,User#28,ExitCode#29,State#30,Reservation#31,ReservationId#32,AllocTRES#33] csv
+                     :- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, cast(AllocNodes#62 as bigint) AS AllocNodes#79L, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, cast(ReservationId#70 as bigint) AS ReservationId#80L, AllocTRES#71, EState#73, COMPLETED#74, Period#75]
+                     :  +- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, AllocNodes#62, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, ReservationId#70, AllocTRES#71, EState#73, COMPLETED#74, Jul AS Period#75]
+                     :     +- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, AllocNodes#62, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, ReservationId#70, AllocTRES#71, EState#73, CASE WHEN (State#68 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#74]
+                     :        +- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, AllocNodes#62, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, ReservationId#70, AllocTRES#71, regexp_replace(State#68, CANCELLED(.*), CANCELLED, 1) AS EState#73]
+                     :           +- Relation [JobID#55,JobIDRaw#56,ElapsedRaw#57,Account#58,AllocCPUS#59,CPUTimeRAW#60L,NNodes#61,AllocNodes#62,NCPUS#63,Partition#64,TotalCPU#65,User#66,ExitCode#67,State#68,Reservation#69,ReservationId#70,AllocTRES#71] csv
+                     :- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, cast(CPUTimeRAW#103 as bigint) AS CPUTimeRAW#119L, NNodes#104, cast(AllocNodes#105 as bigint) AS AllocNodes#120L, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, cast(ReservationId#113 as bigint) AS ReservationId#121L, AllocTRES#114, EState#116, COMPLETED#117, Period#118]
+                     :  +- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, CPUTimeRAW#103, NNodes#104, AllocNodes#105, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, ReservationId#113, AllocTRES#114, EState#116, COMPLETED#117, Apr AS Period#118]
+                     :     +- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, CPUTimeRAW#103, NNodes#104, AllocNodes#105, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, ReservationId#113, AllocTRES#114, EState#116, CASE WHEN (State#111 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#117]
+                     :        +- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, CPUTimeRAW#103, NNodes#104, AllocNodes#105, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, ReservationId#113, AllocTRES#114, regexp_replace(State#111, CANCELLED(.*), CANCELLED, 1) AS EState#116]
+                     :           +- Relation [JobID#98,JobIDRaw#99,ElapsedRaw#100,Account#101,AllocCPUS#102,CPUTimeRAW#103,NNodes#104,AllocNodes#105,NCPUS#106,Partition#107,TotalCPU#108,User#109,ExitCode#110,State#111,Reservation#112,ReservationId#113,AllocTRES#114] csv
+                     :- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, cast(CPUTimeRAW#144 as bigint) AS CPUTimeRAW#160L, NNodes#145, cast(AllocNodes#146 as bigint) AS AllocNodes#161L, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, cast(ReservationId#154 as bigint) AS ReservationId#162L, AllocTRES#155, EState#157, COMPLETED#158, Period#159]
+                     :  +- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, CPUTimeRAW#144, NNodes#145, AllocNodes#146, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, ReservationId#154, AllocTRES#155, EState#157, COMPLETED#158, Sep AS Period#159]
+                     :     +- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, CPUTimeRAW#144, NNodes#145, AllocNodes#146, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, ReservationId#154, AllocTRES#155, EState#157, CASE WHEN (State#152 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#158]
+                     :        +- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, CPUTimeRAW#144, NNodes#145, AllocNodes#146, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, ReservationId#154, AllocTRES#155, regexp_replace(State#152, CANCELLED(.*), CANCELLED, 1) AS EState#157]
+                     :           +- Relation [JobID#139,JobIDRaw#140,ElapsedRaw#141,Account#142,AllocCPUS#143,CPUTimeRAW#144,NNodes#145,AllocNodes#146,NCPUS#147,Partition#148,TotalCPU#149,User#150,ExitCode#151,State#152,Reservation#153,ReservationId#154,AllocTRES#155] csv
+                     :- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, cast(CPUTimeRAW#185 as bigint) AS CPUTimeRAW#201L, NNodes#186, cast(AllocNodes#187 as bigint) AS AllocNodes#202L, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, cast(ReservationId#195 as bigint) AS ReservationId#203L, AllocTRES#196, EState#198, COMPLETED#199, Period#200]
+                     :  +- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, CPUTimeRAW#185, NNodes#186, AllocNodes#187, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, ReservationId#195, AllocTRES#196, EState#198, COMPLETED#199, Oct AS Period#200]
+                     :     +- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, CPUTimeRAW#185, NNodes#186, AllocNodes#187, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, ReservationId#195, AllocTRES#196, EState#198, CASE WHEN (State#193 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#199]
+                     :        +- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, CPUTimeRAW#185, NNodes#186, AllocNodes#187, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, ReservationId#195, AllocTRES#196, regexp_replace(State#193, CANCELLED(.*), CANCELLED, 1) AS EState#198]
+                     :           +- Relation [JobID#180,JobIDRaw#181,ElapsedRaw#182,Account#183,AllocCPUS#184,CPUTimeRAW#185,NNodes#186,AllocNodes#187,NCPUS#188,Partition#189,TotalCPU#190,User#191,ExitCode#192,State#193,Reservation#194,ReservationId#195,AllocTRES#196] csv
+                     :- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, cast(CPUTimeRAW#226 as bigint) AS CPUTimeRAW#242L, NNodes#227, cast(AllocNodes#228 as bigint) AS AllocNodes#243L, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, cast(ReservationId#236 as bigint) AS ReservationId#244L, AllocTRES#237, EState#239, COMPLETED#240, Period#241]
+                     :  +- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, CPUTimeRAW#226, NNodes#227, AllocNodes#228, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, ReservationId#236, AllocTRES#237, EState#239, COMPLETED#240, Mar AS Period#241]
+                     :     +- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, CPUTimeRAW#226, NNodes#227, AllocNodes#228, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, ReservationId#236, AllocTRES#237, EState#239, CASE WHEN (State#234 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#240]
+                     :        +- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, CPUTimeRAW#226, NNodes#227, AllocNodes#228, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, ReservationId#236, AllocTRES#237, regexp_replace(State#234, CANCELLED(.*), CANCELLED, 1) AS EState#239]
+                     :           +- Relation [JobID#221,JobIDRaw#222,ElapsedRaw#223,Account#224,AllocCPUS#225,CPUTimeRAW#226,NNodes#227,AllocNodes#228,NCPUS#229,Partition#230,TotalCPU#231,User#232,ExitCode#233,State#234,Reservation#235,ReservationId#236,AllocTRES#237] csv
+                     :- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, cast(AllocNodes#269 as bigint) AS AllocNodes#283L, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, cast(ReservationId#277 as bigint) AS ReservationId#284L, AllocTRES#278, EState#280, COMPLETED#281, Period#282]
+                     :  +- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, AllocNodes#269, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, ReservationId#277, AllocTRES#278, EState#280, COMPLETED#281, Jan AS Period#282]
+                     :     +- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, AllocNodes#269, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, ReservationId#277, AllocTRES#278, EState#280, CASE WHEN (State#275 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#281]
+                     :        +- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, AllocNodes#269, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, ReservationId#277, AllocTRES#278, regexp_replace(State#275, CANCELLED(.*), CANCELLED, 1) AS EState#280]
+                     :           +- Relation [JobID#262,JobIDRaw#263,ElapsedRaw#264,Account#265,AllocCPUS#266,CPUTimeRAW#267L,NNodes#268,AllocNodes#269,NCPUS#270,Partition#271,TotalCPU#272,User#273,ExitCode#274,State#275,Reservation#276,ReservationId#277,AllocTRES#278] csv
+                     :- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, cast(AllocNodes#309 as bigint) AS AllocNodes#323L, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, cast(ReservationId#317 as bigint) AS ReservationId#324L, AllocTRES#318, EState#320, COMPLETED#321, Period#322]
+                     :  +- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, AllocNodes#309, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, ReservationId#317, AllocTRES#318, EState#320, COMPLETED#321, Feb AS Period#322]
+                     :     +- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, AllocNodes#309, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, ReservationId#317, AllocTRES#318, EState#320, CASE WHEN (State#315 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#321]
+                     :        +- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, AllocNodes#309, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, ReservationId#317, AllocTRES#318, regexp_replace(State#315, CANCELLED(.*), CANCELLED, 1) AS EState#320]
+                     :           +- Relation [JobID#302,JobIDRaw#303,ElapsedRaw#304,Account#305,AllocCPUS#306,CPUTimeRAW#307L,NNodes#308,AllocNodes#309,NCPUS#310,Partition#311,TotalCPU#312,User#313,ExitCode#314,State#315,Reservation#316,ReservationId#317,AllocTRES#318] csv
+                     :- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, cast(AllocNodes#349 as bigint) AS AllocNodes#363L, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, cast(ReservationId#357 as bigint) AS ReservationId#364L, AllocTRES#358, EState#360, COMPLETED#361, Period#362]
+                     :  +- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, AllocNodes#349, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, ReservationId#357, AllocTRES#358, EState#360, COMPLETED#361, Nov AS Period#362]
+                     :     +- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, AllocNodes#349, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, ReservationId#357, AllocTRES#358, EState#360, CASE WHEN (State#355 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#361]
+                     :        +- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, AllocNodes#349, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, ReservationId#357, AllocTRES#358, regexp_replace(State#355, CANCELLED(.*), CANCELLED, 1) AS EState#360]
+                     :           +- Relation [JobID#342,JobIDRaw#343,ElapsedRaw#344,Account#345,AllocCPUS#346,CPUTimeRAW#347L,NNodes#348,AllocNodes#349,NCPUS#350,Partition#351,TotalCPU#352,User#353,ExitCode#354,State#355,Reservation#356,ReservationId#357,AllocTRES#358] csv
+                     :- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, cast(CPUTimeRAW#387 as bigint) AS CPUTimeRAW#403L, NNodes#388, cast(AllocNodes#389 as bigint) AS AllocNodes#404L, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, cast(ReservationId#397 as bigint) AS ReservationId#405L, AllocTRES#398, EState#400, COMPLETED#401, Period#402]
+                     :  +- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, CPUTimeRAW#387, NNodes#388, AllocNodes#389, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, ReservationId#397, AllocTRES#398, EState#400, COMPLETED#401, May AS Period#402]
+                     :     +- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, CPUTimeRAW#387, NNodes#388, AllocNodes#389, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, ReservationId#397, AllocTRES#398, EState#400, CASE WHEN (State#395 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#401]
+                     :        +- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, CPUTimeRAW#387, NNodes#388, AllocNodes#389, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, ReservationId#397, AllocTRES#398, regexp_replace(State#395, CANCELLED(.*), CANCELLED, 1) AS EState#400]
+                     :           +- Relation [JobID#382,JobIDRaw#383,ElapsedRaw#384,Account#385,AllocCPUS#386,CPUTimeRAW#387,NNodes#388,AllocNodes#389,NCPUS#390,Partition#391,TotalCPU#392,User#393,ExitCode#394,State#395,Reservation#396,ReservationId#397,AllocTRES#398] csv
+                     :- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, cast(AllocNodes#430 as bigint) AS AllocNodes#444L, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, cast(ReservationId#438 as bigint) AS ReservationId#445L, AllocTRES#439, EState#441, COMPLETED#442, Period#443]
+                     :  +- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, AllocNodes#430, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, ReservationId#438, AllocTRES#439, EState#441, COMPLETED#442, Dec AS Period#443]
+                     :     +- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, AllocNodes#430, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, ReservationId#438, AllocTRES#439, EState#441, CASE WHEN (State#436 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#442]
+                     :        +- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, AllocNodes#430, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, ReservationId#438, AllocTRES#439, regexp_replace(State#436, CANCELLED(.*), CANCELLED, 1) AS EState#441]
+                     :           +- Relation [JobID#423,JobIDRaw#424,ElapsedRaw#425,Account#426,AllocCPUS#427,CPUTimeRAW#428L,NNodes#429,AllocNodes#430,NCPUS#431,Partition#432,TotalCPU#433,User#434,ExitCode#435,State#436,Reservation#437,ReservationId#438,AllocTRES#439] csv
+                     +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, cast(AllocNodes#470 as bigint) AS AllocNodes#484L, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, cast(ReservationId#478 as bigint) AS ReservationId#485L, AllocTRES#479, EState#481, COMPLETED#482, Period#483]
+                        +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, AllocNodes#470, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, ReservationId#478, AllocTRES#479, EState#481, COMPLETED#482, Jun AS Period#483]
+                           +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, AllocNodes#470, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, ReservationId#478, AllocTRES#479, EState#481, CASE WHEN (State#476 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#482]
+                              +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, AllocNodes#470, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, ReservationId#478, AllocTRES#479, regexp_replace(State#476, CANCELLED(.*), CANCELLED, 1) AS EState#481]
+                                 +- Relation [JobID#463,JobIDRaw#464,ElapsedRaw#465,Account#466,AllocCPUS#467,CPUTimeRAW#468L,NNodes#469,AllocNodes#470,NCPUS#471,Partition#472,TotalCPU#473,User#474,ExitCode#475,State#476,Reservation#477,ReservationId#478,AllocTRES#479] csv
+
+== Analyzed Logical Plan ==
+cluster: string, count: bigint
+Aggregate [cluster#486], [cluster#486, count(1) AS count#531L]
++- Filter NOT (Agency#487 = LOCAL)
+   +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, Agency#487, OldVNodes#488, VNodes#489L, (cast(ElapsedRaw#19 as bigint) * VNodes#489L) AS totalJobSeconds#490L]
+      +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, Agency#487, OldVNodes#488, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN isnull(AllocTRES#33) THEN cast(NNodes#23 as bigint) ELSE CASE WHEN RLIKE(AllocTRES#33, gres/gpu=(\d+)) THEN cast(regexp_extract(AllocTRES#33, gres/gpu=(\d+), 1) as bigint) ELSE cast((NNodes#23 * 4) as bigint) END END ELSE cast(NNodes#23 as bigint) END AS VNodes#489L]
+         +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, Agency#487, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN ((AllocCPUS#21 % 32) = 0) THEN (cast(AllocCPUS#21 as double) / cast(32 as double)) ELSE ((cast(AllocCPUS#21 as double) / cast(32 as double)) + cast(1 as double)) END ELSE cast(NNodes#23 as double) END AS OldVNodes#488]
+            +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, cluster#486, CASE WHEN StartsWith(Account#20, f) THEN FCT ELSE CASE WHEN StartsWith(Account#20, ee) THEN EHPC ELSE LOCAL END END AS Agency#487]
+               +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#76L, NNodes#23, AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37, CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#486]
+                  +- Union false, false
+                     :- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, cast(CPUTimeRAW#22 as bigint) AS CPUTimeRAW#76L, NNodes#23, cast(AllocNodes#24 as bigint) AS AllocNodes#77L, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, cast(ReservationId#32 as bigint) AS ReservationId#78L, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+                     :  +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Ago AS Period#37]
+                     :     +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, CASE WHEN (State#30 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#36]
+                     :        +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, regexp_replace(State#30, CANCELLED(.*), CANCELLED, 1) AS EState#35]
+                     :           +- Relation [JobID#17,JobIDRaw#18,ElapsedRaw#19,Account#20,AllocCPUS#21,CPUTimeRAW#22,NNodes#23,AllocNodes#24,NCPUS#25,Partition#26,TotalCPU#27,User#28,ExitCode#29,State#30,Reservation#31,ReservationId#32,AllocTRES#33] csv
+                     :- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, cast(AllocNodes#62 as bigint) AS AllocNodes#79L, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, cast(ReservationId#70 as bigint) AS ReservationId#80L, AllocTRES#71, EState#73, COMPLETED#74, Period#75]
+                     :  +- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, AllocNodes#62, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, ReservationId#70, AllocTRES#71, EState#73, COMPLETED#74, Jul AS Period#75]
+                     :     +- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, AllocNodes#62, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, ReservationId#70, AllocTRES#71, EState#73, CASE WHEN (State#68 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#74]
+                     :        +- Project [JobID#55, JobIDRaw#56, ElapsedRaw#57, Account#58, AllocCPUS#59, CPUTimeRAW#60L, NNodes#61, AllocNodes#62, NCPUS#63, Partition#64, TotalCPU#65, User#66, ExitCode#67, State#68, Reservation#69, ReservationId#70, AllocTRES#71, regexp_replace(State#68, CANCELLED(.*), CANCELLED, 1) AS EState#73]
+                     :           +- Relation [JobID#55,JobIDRaw#56,ElapsedRaw#57,Account#58,AllocCPUS#59,CPUTimeRAW#60L,NNodes#61,AllocNodes#62,NCPUS#63,Partition#64,TotalCPU#65,User#66,ExitCode#67,State#68,Reservation#69,ReservationId#70,AllocTRES#71] csv
+                     :- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, cast(CPUTimeRAW#103 as bigint) AS CPUTimeRAW#119L, NNodes#104, cast(AllocNodes#105 as bigint) AS AllocNodes#120L, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, cast(ReservationId#113 as bigint) AS ReservationId#121L, AllocTRES#114, EState#116, COMPLETED#117, Period#118]
+                     :  +- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, CPUTimeRAW#103, NNodes#104, AllocNodes#105, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, ReservationId#113, AllocTRES#114, EState#116, COMPLETED#117, Apr AS Period#118]
+                     :     +- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, CPUTimeRAW#103, NNodes#104, AllocNodes#105, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, ReservationId#113, AllocTRES#114, EState#116, CASE WHEN (State#111 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#117]
+                     :        +- Project [JobID#98, JobIDRaw#99, ElapsedRaw#100, Account#101, AllocCPUS#102, CPUTimeRAW#103, NNodes#104, AllocNodes#105, NCPUS#106, Partition#107, TotalCPU#108, User#109, ExitCode#110, State#111, Reservation#112, ReservationId#113, AllocTRES#114, regexp_replace(State#111, CANCELLED(.*), CANCELLED, 1) AS EState#116]
+                     :           +- Relation [JobID#98,JobIDRaw#99,ElapsedRaw#100,Account#101,AllocCPUS#102,CPUTimeRAW#103,NNodes#104,AllocNodes#105,NCPUS#106,Partition#107,TotalCPU#108,User#109,ExitCode#110,State#111,Reservation#112,ReservationId#113,AllocTRES#114] csv
+                     :- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, cast(CPUTimeRAW#144 as bigint) AS CPUTimeRAW#160L, NNodes#145, cast(AllocNodes#146 as bigint) AS AllocNodes#161L, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, cast(ReservationId#154 as bigint) AS ReservationId#162L, AllocTRES#155, EState#157, COMPLETED#158, Period#159]
+                     :  +- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, CPUTimeRAW#144, NNodes#145, AllocNodes#146, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, ReservationId#154, AllocTRES#155, EState#157, COMPLETED#158, Sep AS Period#159]
+                     :     +- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, CPUTimeRAW#144, NNodes#145, AllocNodes#146, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, ReservationId#154, AllocTRES#155, EState#157, CASE WHEN (State#152 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#158]
+                     :        +- Project [JobID#139, JobIDRaw#140, ElapsedRaw#141, Account#142, AllocCPUS#143, CPUTimeRAW#144, NNodes#145, AllocNodes#146, NCPUS#147, Partition#148, TotalCPU#149, User#150, ExitCode#151, State#152, Reservation#153, ReservationId#154, AllocTRES#155, regexp_replace(State#152, CANCELLED(.*), CANCELLED, 1) AS EState#157]
+                     :           +- Relation [JobID#139,JobIDRaw#140,ElapsedRaw#141,Account#142,AllocCPUS#143,CPUTimeRAW#144,NNodes#145,AllocNodes#146,NCPUS#147,Partition#148,TotalCPU#149,User#150,ExitCode#151,State#152,Reservation#153,ReservationId#154,AllocTRES#155] csv
+                     :- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, cast(CPUTimeRAW#185 as bigint) AS CPUTimeRAW#201L, NNodes#186, cast(AllocNodes#187 as bigint) AS AllocNodes#202L, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, cast(ReservationId#195 as bigint) AS ReservationId#203L, AllocTRES#196, EState#198, COMPLETED#199, Period#200]
+                     :  +- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, CPUTimeRAW#185, NNodes#186, AllocNodes#187, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, ReservationId#195, AllocTRES#196, EState#198, COMPLETED#199, Oct AS Period#200]
+                     :     +- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, CPUTimeRAW#185, NNodes#186, AllocNodes#187, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, ReservationId#195, AllocTRES#196, EState#198, CASE WHEN (State#193 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#199]
+                     :        +- Project [JobID#180, JobIDRaw#181, ElapsedRaw#182, Account#183, AllocCPUS#184, CPUTimeRAW#185, NNodes#186, AllocNodes#187, NCPUS#188, Partition#189, TotalCPU#190, User#191, ExitCode#192, State#193, Reservation#194, ReservationId#195, AllocTRES#196, regexp_replace(State#193, CANCELLED(.*), CANCELLED, 1) AS EState#198]
+                     :           +- Relation [JobID#180,JobIDRaw#181,ElapsedRaw#182,Account#183,AllocCPUS#184,CPUTimeRAW#185,NNodes#186,AllocNodes#187,NCPUS#188,Partition#189,TotalCPU#190,User#191,ExitCode#192,State#193,Reservation#194,ReservationId#195,AllocTRES#196] csv
+                     :- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, cast(CPUTimeRAW#226 as bigint) AS CPUTimeRAW#242L, NNodes#227, cast(AllocNodes#228 as bigint) AS AllocNodes#243L, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, cast(ReservationId#236 as bigint) AS ReservationId#244L, AllocTRES#237, EState#239, COMPLETED#240, Period#241]
+                     :  +- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, CPUTimeRAW#226, NNodes#227, AllocNodes#228, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, ReservationId#236, AllocTRES#237, EState#239, COMPLETED#240, Mar AS Period#241]
+                     :     +- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, CPUTimeRAW#226, NNodes#227, AllocNodes#228, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, ReservationId#236, AllocTRES#237, EState#239, CASE WHEN (State#234 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#240]
+                     :        +- Project [JobID#221, JobIDRaw#222, ElapsedRaw#223, Account#224, AllocCPUS#225, CPUTimeRAW#226, NNodes#227, AllocNodes#228, NCPUS#229, Partition#230, TotalCPU#231, User#232, ExitCode#233, State#234, Reservation#235, ReservationId#236, AllocTRES#237, regexp_replace(State#234, CANCELLED(.*), CANCELLED, 1) AS EState#239]
+                     :           +- Relation [JobID#221,JobIDRaw#222,ElapsedRaw#223,Account#224,AllocCPUS#225,CPUTimeRAW#226,NNodes#227,AllocNodes#228,NCPUS#229,Partition#230,TotalCPU#231,User#232,ExitCode#233,State#234,Reservation#235,ReservationId#236,AllocTRES#237] csv
+                     :- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, cast(AllocNodes#269 as bigint) AS AllocNodes#283L, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, cast(ReservationId#277 as bigint) AS ReservationId#284L, AllocTRES#278, EState#280, COMPLETED#281, Period#282]
+                     :  +- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, AllocNodes#269, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, ReservationId#277, AllocTRES#278, EState#280, COMPLETED#281, Jan AS Period#282]
+                     :     +- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, AllocNodes#269, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, ReservationId#277, AllocTRES#278, EState#280, CASE WHEN (State#275 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#281]
+                     :        +- Project [JobID#262, JobIDRaw#263, ElapsedRaw#264, Account#265, AllocCPUS#266, CPUTimeRAW#267L, NNodes#268, AllocNodes#269, NCPUS#270, Partition#271, TotalCPU#272, User#273, ExitCode#274, State#275, Reservation#276, ReservationId#277, AllocTRES#278, regexp_replace(State#275, CANCELLED(.*), CANCELLED, 1) AS EState#280]
+                     :           +- Relation [JobID#262,JobIDRaw#263,ElapsedRaw#264,Account#265,AllocCPUS#266,CPUTimeRAW#267L,NNodes#268,AllocNodes#269,NCPUS#270,Partition#271,TotalCPU#272,User#273,ExitCode#274,State#275,Reservation#276,ReservationId#277,AllocTRES#278] csv
+                     :- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, cast(AllocNodes#309 as bigint) AS AllocNodes#323L, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, cast(ReservationId#317 as bigint) AS ReservationId#324L, AllocTRES#318, EState#320, COMPLETED#321, Period#322]
+                     :  +- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, AllocNodes#309, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, ReservationId#317, AllocTRES#318, EState#320, COMPLETED#321, Feb AS Period#322]
+                     :     +- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, AllocNodes#309, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, ReservationId#317, AllocTRES#318, EState#320, CASE WHEN (State#315 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#321]
+                     :        +- Project [JobID#302, JobIDRaw#303, ElapsedRaw#304, Account#305, AllocCPUS#306, CPUTimeRAW#307L, NNodes#308, AllocNodes#309, NCPUS#310, Partition#311, TotalCPU#312, User#313, ExitCode#314, State#315, Reservation#316, ReservationId#317, AllocTRES#318, regexp_replace(State#315, CANCELLED(.*), CANCELLED, 1) AS EState#320]
+                     :           +- Relation [JobID#302,JobIDRaw#303,ElapsedRaw#304,Account#305,AllocCPUS#306,CPUTimeRAW#307L,NNodes#308,AllocNodes#309,NCPUS#310,Partition#311,TotalCPU#312,User#313,ExitCode#314,State#315,Reservation#316,ReservationId#317,AllocTRES#318] csv
+                     :- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, cast(AllocNodes#349 as bigint) AS AllocNodes#363L, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, cast(ReservationId#357 as bigint) AS ReservationId#364L, AllocTRES#358, EState#360, COMPLETED#361, Period#362]
+                     :  +- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, AllocNodes#349, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, ReservationId#357, AllocTRES#358, EState#360, COMPLETED#361, Nov AS Period#362]
+                     :     +- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, AllocNodes#349, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, ReservationId#357, AllocTRES#358, EState#360, CASE WHEN (State#355 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#361]
+                     :        +- Project [JobID#342, JobIDRaw#343, ElapsedRaw#344, Account#345, AllocCPUS#346, CPUTimeRAW#347L, NNodes#348, AllocNodes#349, NCPUS#350, Partition#351, TotalCPU#352, User#353, ExitCode#354, State#355, Reservation#356, ReservationId#357, AllocTRES#358, regexp_replace(State#355, CANCELLED(.*), CANCELLED, 1) AS EState#360]
+                     :           +- Relation [JobID#342,JobIDRaw#343,ElapsedRaw#344,Account#345,AllocCPUS#346,CPUTimeRAW#347L,NNodes#348,AllocNodes#349,NCPUS#350,Partition#351,TotalCPU#352,User#353,ExitCode#354,State#355,Reservation#356,ReservationId#357,AllocTRES#358] csv
+                     :- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, cast(CPUTimeRAW#387 as bigint) AS CPUTimeRAW#403L, NNodes#388, cast(AllocNodes#389 as bigint) AS AllocNodes#404L, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, cast(ReservationId#397 as bigint) AS ReservationId#405L, AllocTRES#398, EState#400, COMPLETED#401, Period#402]
+                     :  +- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, CPUTimeRAW#387, NNodes#388, AllocNodes#389, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, ReservationId#397, AllocTRES#398, EState#400, COMPLETED#401, May AS Period#402]
+                     :     +- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, CPUTimeRAW#387, NNodes#388, AllocNodes#389, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, ReservationId#397, AllocTRES#398, EState#400, CASE WHEN (State#395 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#401]
+                     :        +- Project [JobID#382, JobIDRaw#383, ElapsedRaw#384, Account#385, AllocCPUS#386, CPUTimeRAW#387, NNodes#388, AllocNodes#389, NCPUS#390, Partition#391, TotalCPU#392, User#393, ExitCode#394, State#395, Reservation#396, ReservationId#397, AllocTRES#398, regexp_replace(State#395, CANCELLED(.*), CANCELLED, 1) AS EState#400]
+                     :           +- Relation [JobID#382,JobIDRaw#383,ElapsedRaw#384,Account#385,AllocCPUS#386,CPUTimeRAW#387,NNodes#388,AllocNodes#389,NCPUS#390,Partition#391,TotalCPU#392,User#393,ExitCode#394,State#395,Reservation#396,ReservationId#397,AllocTRES#398] csv
+                     :- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, cast(AllocNodes#430 as bigint) AS AllocNodes#444L, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, cast(ReservationId#438 as bigint) AS ReservationId#445L, AllocTRES#439, EState#441, COMPLETED#442, Period#443]
+                     :  +- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, AllocNodes#430, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, ReservationId#438, AllocTRES#439, EState#441, COMPLETED#442, Dec AS Period#443]
+                     :     +- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, AllocNodes#430, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, ReservationId#438, AllocTRES#439, EState#441, CASE WHEN (State#436 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#442]
+                     :        +- Project [JobID#423, JobIDRaw#424, ElapsedRaw#425, Account#426, AllocCPUS#427, CPUTimeRAW#428L, NNodes#429, AllocNodes#430, NCPUS#431, Partition#432, TotalCPU#433, User#434, ExitCode#435, State#436, Reservation#437, ReservationId#438, AllocTRES#439, regexp_replace(State#436, CANCELLED(.*), CANCELLED, 1) AS EState#441]
+                     :           +- Relation [JobID#423,JobIDRaw#424,ElapsedRaw#425,Account#426,AllocCPUS#427,CPUTimeRAW#428L,NNodes#429,AllocNodes#430,NCPUS#431,Partition#432,TotalCPU#433,User#434,ExitCode#435,State#436,Reservation#437,ReservationId#438,AllocTRES#439] csv
+                     +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, cast(AllocNodes#470 as bigint) AS AllocNodes#484L, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, cast(ReservationId#478 as bigint) AS ReservationId#485L, AllocTRES#479, EState#481, COMPLETED#482, Period#483]
+                        +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, AllocNodes#470, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, ReservationId#478, AllocTRES#479, EState#481, COMPLETED#482, Jun AS Period#483]
+                           +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, AllocNodes#470, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, ReservationId#478, AllocTRES#479, EState#481, CASE WHEN (State#476 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#482]
+                              +- Project [JobID#463, JobIDRaw#464, ElapsedRaw#465, Account#466, AllocCPUS#467, CPUTimeRAW#468L, NNodes#469, AllocNodes#470, NCPUS#471, Partition#472, TotalCPU#473, User#474, ExitCode#475, State#476, Reservation#477, ReservationId#478, AllocTRES#479, regexp_replace(State#476, CANCELLED(.*), CANCELLED, 1) AS EState#481]
+                                 +- Relation [JobID#463,JobIDRaw#464,ElapsedRaw#465,Account#466,AllocCPUS#467,CPUTimeRAW#468L,NNodes#469,AllocNodes#470,NCPUS#471,Partition#472,TotalCPU#473,User#474,ExitCode#475,State#476,Reservation#477,ReservationId#478,AllocTRES#479] csv
+
+== Optimized Logical Plan ==
+Aggregate [cluster#486], [cluster#486, count(1) AS count#531L]
++- Union false, false
+   :- Project [CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#486]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#20, f) THEN false ELSE NOT (StartsWith(Account#20, ee) <=> true) END
+   :     +- Relation [JobID#17,JobIDRaw#18,ElapsedRaw#19,Account#20,AllocCPUS#21,CPUTimeRAW#22,NNodes#23,AllocNodes#24,NCPUS#25,Partition#26,TotalCPU#27,User#28,ExitCode#29,State#30,Reservation#31,ReservationId#32,AllocTRES#33] csv
+   :- Project [CASE WHEN Contains(Partition#64, arm) THEN ARM ELSE CASE WHEN Contains(Partition#64, a100) THEN GPU ELSE AMD END END AS cluster#558]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#58, f) THEN false ELSE NOT (StartsWith(Account#58, ee) <=> true) END
+   :     +- Relation [JobID#55,JobIDRaw#56,ElapsedRaw#57,Account#58,AllocCPUS#59,CPUTimeRAW#60L,NNodes#61,AllocNodes#62,NCPUS#63,Partition#64,TotalCPU#65,User#66,ExitCode#67,State#68,Reservation#69,ReservationId#70,AllocTRES#71] csv
+   :- Project [CASE WHEN Contains(Partition#107, arm) THEN ARM ELSE CASE WHEN Contains(Partition#107, a100) THEN GPU ELSE AMD END END AS cluster#559]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#101, f) THEN false ELSE NOT (StartsWith(Account#101, ee) <=> true) END
+   :     +- Relation [JobID#98,JobIDRaw#99,ElapsedRaw#100,Account#101,AllocCPUS#102,CPUTimeRAW#103,NNodes#104,AllocNodes#105,NCPUS#106,Partition#107,TotalCPU#108,User#109,ExitCode#110,State#111,Reservation#112,ReservationId#113,AllocTRES#114] csv
+   :- Project [CASE WHEN Contains(Partition#148, arm) THEN ARM ELSE CASE WHEN Contains(Partition#148, a100) THEN GPU ELSE AMD END END AS cluster#560]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#142, f) THEN false ELSE NOT (StartsWith(Account#142, ee) <=> true) END
+   :     +- Relation [JobID#139,JobIDRaw#140,ElapsedRaw#141,Account#142,AllocCPUS#143,CPUTimeRAW#144,NNodes#145,AllocNodes#146,NCPUS#147,Partition#148,TotalCPU#149,User#150,ExitCode#151,State#152,Reservation#153,ReservationId#154,AllocTRES#155] csv
+   :- Project [CASE WHEN Contains(Partition#189, arm) THEN ARM ELSE CASE WHEN Contains(Partition#189, a100) THEN GPU ELSE AMD END END AS cluster#561]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#183, f) THEN false ELSE NOT (StartsWith(Account#183, ee) <=> true) END
+   :     +- Relation [JobID#180,JobIDRaw#181,ElapsedRaw#182,Account#183,AllocCPUS#184,CPUTimeRAW#185,NNodes#186,AllocNodes#187,NCPUS#188,Partition#189,TotalCPU#190,User#191,ExitCode#192,State#193,Reservation#194,ReservationId#195,AllocTRES#196] csv
+   :- Project [CASE WHEN Contains(Partition#230, arm) THEN ARM ELSE CASE WHEN Contains(Partition#230, a100) THEN GPU ELSE AMD END END AS cluster#562]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#224, f) THEN false ELSE NOT (StartsWith(Account#224, ee) <=> true) END
+   :     +- Relation [JobID#221,JobIDRaw#222,ElapsedRaw#223,Account#224,AllocCPUS#225,CPUTimeRAW#226,NNodes#227,AllocNodes#228,NCPUS#229,Partition#230,TotalCPU#231,User#232,ExitCode#233,State#234,Reservation#235,ReservationId#236,AllocTRES#237] csv
+   :- Project [CASE WHEN Contains(Partition#271, arm) THEN ARM ELSE CASE WHEN Contains(Partition#271, a100) THEN GPU ELSE AMD END END AS cluster#563]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#265, f) THEN false ELSE NOT (StartsWith(Account#265, ee) <=> true) END
+   :     +- Relation [JobID#262,JobIDRaw#263,ElapsedRaw#264,Account#265,AllocCPUS#266,CPUTimeRAW#267L,NNodes#268,AllocNodes#269,NCPUS#270,Partition#271,TotalCPU#272,User#273,ExitCode#274,State#275,Reservation#276,ReservationId#277,AllocTRES#278] csv
+   :- Project [CASE WHEN Contains(Partition#311, arm) THEN ARM ELSE CASE WHEN Contains(Partition#311, a100) THEN GPU ELSE AMD END END AS cluster#564]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#305, f) THEN false ELSE NOT (StartsWith(Account#305, ee) <=> true) END
+   :     +- Relation [JobID#302,JobIDRaw#303,ElapsedRaw#304,Account#305,AllocCPUS#306,CPUTimeRAW#307L,NNodes#308,AllocNodes#309,NCPUS#310,Partition#311,TotalCPU#312,User#313,ExitCode#314,State#315,Reservation#316,ReservationId#317,AllocTRES#318] csv
+   :- Project [CASE WHEN Contains(Partition#351, arm) THEN ARM ELSE CASE WHEN Contains(Partition#351, a100) THEN GPU ELSE AMD END END AS cluster#565]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#345, f) THEN false ELSE NOT (StartsWith(Account#345, ee) <=> true) END
+   :     +- Relation [JobID#342,JobIDRaw#343,ElapsedRaw#344,Account#345,AllocCPUS#346,CPUTimeRAW#347L,NNodes#348,AllocNodes#349,NCPUS#350,Partition#351,TotalCPU#352,User#353,ExitCode#354,State#355,Reservation#356,ReservationId#357,AllocTRES#358] csv
+   :- Project [CASE WHEN Contains(Partition#391, arm) THEN ARM ELSE CASE WHEN Contains(Partition#391, a100) THEN GPU ELSE AMD END END AS cluster#566]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#385, f) THEN false ELSE NOT (StartsWith(Account#385, ee) <=> true) END
+   :     +- Relation [JobID#382,JobIDRaw#383,ElapsedRaw#384,Account#385,AllocCPUS#386,CPUTimeRAW#387,NNodes#388,AllocNodes#389,NCPUS#390,Partition#391,TotalCPU#392,User#393,ExitCode#394,State#395,Reservation#396,ReservationId#397,AllocTRES#398] csv
+   :- Project [CASE WHEN Contains(Partition#432, arm) THEN ARM ELSE CASE WHEN Contains(Partition#432, a100) THEN GPU ELSE AMD END END AS cluster#567]
+   :  +- Filter NOT CASE WHEN StartsWith(Account#426, f) THEN false ELSE NOT (StartsWith(Account#426, ee) <=> true) END
+   :     +- Relation [JobID#423,JobIDRaw#424,ElapsedRaw#425,Account#426,AllocCPUS#427,CPUTimeRAW#428L,NNodes#429,AllocNodes#430,NCPUS#431,Partition#432,TotalCPU#433,User#434,ExitCode#435,State#436,Reservation#437,ReservationId#438,AllocTRES#439] csv
+   +- Project [CASE WHEN Contains(Partition#472, arm) THEN ARM ELSE CASE WHEN Contains(Partition#472, a100) THEN GPU ELSE AMD END END AS cluster#568]
+      +- Filter NOT CASE WHEN StartsWith(Account#466, f) THEN false ELSE NOT (StartsWith(Account#466, ee) <=> true) END
+         +- Relation [JobID#463,JobIDRaw#464,ElapsedRaw#465,Account#466,AllocCPUS#467,CPUTimeRAW#468L,NNodes#469,AllocNodes#470,NCPUS#471,Partition#472,TotalCPU#473,User#474,ExitCode#475,State#476,Reservation#477,ReservationId#478,AllocTRES#479] csv
+
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=false
++- HashAggregate(keys=[cluster#486], functions=[count(1)], output=[cluster#486, count#531L])
+   +- Exchange hashpartitioning(cluster#486, 200), ENSURE_REQUIREMENTS, [plan_id=426]
+      +- HashAggregate(keys=[cluster#486], functions=[partial_count(1)], output=[cluster#486, count#570L])
+         +- Union
+            :- Project [CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#486]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#20, f) THEN false ELSE NOT (StartsWith(Account#20, ee) <=> true) END
+            :     +- FileScan csv [Account#20,Partition#26] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#20, f) THEN false ELSE NOT (StartsWith(Account#20, ee) <=> true..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Ago...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#64, arm) THEN ARM ELSE CASE WHEN Contains(Partition#64, a100) THEN GPU ELSE AMD END END AS cluster#558]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#58, f) THEN false ELSE NOT (StartsWith(Account#58, ee) <=> true) END
+            :     +- FileScan csv [Account#58,Partition#64] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#58, f) THEN false ELSE NOT (StartsWith(Account#58, ee) <=> true..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jul...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#107, arm) THEN ARM ELSE CASE WHEN Contains(Partition#107, a100) THEN GPU ELSE AMD END END AS cluster#559]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#101, f) THEN false ELSE NOT (StartsWith(Account#101, ee) <=> true) END
+            :     +- FileScan csv [Account#101,Partition#107] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#101, f) THEN false ELSE NOT (StartsWith(Account#101, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Apr...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#148, arm) THEN ARM ELSE CASE WHEN Contains(Partition#148, a100) THEN GPU ELSE AMD END END AS cluster#560]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#142, f) THEN false ELSE NOT (StartsWith(Account#142, ee) <=> true) END
+            :     +- FileScan csv [Account#142,Partition#148] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#142, f) THEN false ELSE NOT (StartsWith(Account#142, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Sep...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#189, arm) THEN ARM ELSE CASE WHEN Contains(Partition#189, a100) THEN GPU ELSE AMD END END AS cluster#561]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#183, f) THEN false ELSE NOT (StartsWith(Account#183, ee) <=> true) END
+            :     +- FileScan csv [Account#183,Partition#189] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#183, f) THEN false ELSE NOT (StartsWith(Account#183, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Oct...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#230, arm) THEN ARM ELSE CASE WHEN Contains(Partition#230, a100) THEN GPU ELSE AMD END END AS cluster#562]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#224, f) THEN false ELSE NOT (StartsWith(Account#224, ee) <=> true) END
+            :     +- FileScan csv [Account#224,Partition#230] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#224, f) THEN false ELSE NOT (StartsWith(Account#224, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Mar...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#271, arm) THEN ARM ELSE CASE WHEN Contains(Partition#271, a100) THEN GPU ELSE AMD END END AS cluster#563]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#265, f) THEN false ELSE NOT (StartsWith(Account#265, ee) <=> true) END
+            :     +- FileScan csv [Account#265,Partition#271] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#265, f) THEN false ELSE NOT (StartsWith(Account#265, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jan...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#311, arm) THEN ARM ELSE CASE WHEN Contains(Partition#311, a100) THEN GPU ELSE AMD END END AS cluster#564]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#305, f) THEN false ELSE NOT (StartsWith(Account#305, ee) <=> true) END
+            :     +- FileScan csv [Account#305,Partition#311] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#305, f) THEN false ELSE NOT (StartsWith(Account#305, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Feb...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#351, arm) THEN ARM ELSE CASE WHEN Contains(Partition#351, a100) THEN GPU ELSE AMD END END AS cluster#565]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#345, f) THEN false ELSE NOT (StartsWith(Account#345, ee) <=> true) END
+            :     +- FileScan csv [Account#345,Partition#351] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#345, f) THEN false ELSE NOT (StartsWith(Account#345, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Nov...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#391, arm) THEN ARM ELSE CASE WHEN Contains(Partition#391, a100) THEN GPU ELSE AMD END END AS cluster#566]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#385, f) THEN false ELSE NOT (StartsWith(Account#385, ee) <=> true) END
+            :     +- FileScan csv [Account#385,Partition#391] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#385, f) THEN false ELSE NOT (StartsWith(Account#385, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_May...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            :- Project [CASE WHEN Contains(Partition#432, arm) THEN ARM ELSE CASE WHEN Contains(Partition#432, a100) THEN GPU ELSE AMD END END AS cluster#567]
+            :  +- Filter NOT CASE WHEN StartsWith(Account#426, f) THEN false ELSE NOT (StartsWith(Account#426, ee) <=> true) END
+            :     +- FileScan csv [Account#426,Partition#432] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#426, f) THEN false ELSE NOT (StartsWith(Account#426, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Dec...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+            +- Project [CASE WHEN Contains(Partition#472, arm) THEN ARM ELSE CASE WHEN Contains(Partition#472, a100) THEN GPU ELSE AMD END END AS cluster#568]
+               +- Filter NOT CASE WHEN StartsWith(Account#466, f) THEN false ELSE NOT (StartsWith(Account#466, ee) <=> true) END
+                  +- FileScan csv [Account#466,Partition#472] Batched: false, DataFilters: [NOT CASE WHEN StartsWith(Account#466, f) THEN false ELSE NOT (StartsWith(Account#466, ee) <=> tr..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jun...., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Account:string,Partition:string>
+
++------------+--------+----------+--------------------+---------+----------+------+----------+-----+--------------+-------------------+---------+--------+--------------+-----------+-------------+--------------------+---------+---------+------+-------+------+---------+------+---------------+
+|       JobID|JobIDRaw|ElapsedRaw|             Account|AllocCPUS|CPUTimeRAW|NNodes|AllocNodes|NCPUS|     Partition|           TotalCPU|     User|ExitCode|         State|Reservation|ReservationId|           AllocTRES|   EState|COMPLETED|Period|cluster|Agency|OldVNodes|VNodes|totalJobSeconds|
++------------+--------+----------+--------------------+---------+----------+------+----------+-----+--------------+-------------------+---------+--------+--------------+-----------+-------------+--------------------+---------+---------+------+-------+------+---------+------+---------------+
+|      471340|  471340|    171107|   f202408918cpcaa3g|      128|  21901696|     1|         1|  128|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=128,cpu=1...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      4.0|     4|         684428|
+|      471341|  471341|         5|   f202408918cpcaa3g|       32|       160|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             20|
+|      471342|  471342|         8|   f202408918cpcaa3g|       32|       256|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             32|
+|      471343|  471343|        11|   f202408918cpcaa3g|       32|       352|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             44|
+|      471344|  471344|         4|   f202408918cpcaa3g|       32|       128|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             16|
+|      471345|  471345|         3|   f202408918cpcaa3g|       32|        96|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             12|
+|      471365|  471365|    171104|   f202408918cpcaa3g|      128|  21901312|     1|         1|  128|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=128,cpu=1...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      4.0|     4|         684416|
+|      471366|  471366|         4|   f202408918cpcaa3g|       32|       128|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             16|
+|      471367|  471367|         8|   f202408918cpcaa3g|       32|       256|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             32|
+|      471368|  471368|         4|   f202408918cpcaa3g|       32|       128|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             16|
+|      471369|  471369|         3|   f202408918cpcaa3g|       32|        96|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             12|
+|      471370|  471370|         3|   f202408918cpcaa3g|       32|        96|     1|         1|   32|normal-a100-80|2026-03-11 00:00:00|fcarvalho|     0:0|     COMPLETED|       NULL|         NULL|billing=32,cpu=32...|COMPLETED|COMPLETED|   Ago|    GPU|   FCT|      1.0|     4|             12|
+|486590_[0%1]|  486590|         0|   f202411062cpcaa3a|        0|         0|     1|         0|    0|    normal-arm|2026-03-11 00:00:00|dcarvalho|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    ARM|   FCT|      1.0|     1|              0|
+|      487330|  487330|         0|   f202411062cpcaa3a|        0|         0|     1|         0|    0|       dev-arm|2026-03-11 00:00:00|fassuncao|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    ARM|   FCT|      1.0|     1|              0|
+|      488149|  488149|         0|eehpc-dev-2025d03...|        0|         0|     1|         0|    0|   dev-a100-40|2026-03-11 00:00:00| genovese|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    GPU|  EHPC|      0.0|     1|              0|
+|      488150|  488150|         0|eehpc-dev-2025d03...|        0|         0|     1|         0|    0|   dev-a100-40|2026-03-11 00:00:00| genovese|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    GPU|  EHPC|      0.0|     1|              0|
+|      488151|  488151|         0|eehpc-dev-2025d03...|        0|         0|     1|         0|    0|   dev-a100-40|2026-03-11 00:00:00| genovese|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    GPU|  EHPC|      0.0|     1|              0|
+|      488152|  488152|         0|eehpc-dev-2025d03...|        0|         0|     1|         0|    0|   dev-a100-40|2026-03-11 00:00:00| genovese|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    GPU|  EHPC|      0.0|     1|              0|
+|      488153|  488153|         0|eehpc-dev-2025d03...|        0|         0|     1|         0|    0|   dev-a100-40|2026-03-11 00:00:00| genovese|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    GPU|  EHPC|      0.0|     1|              0|
+|      488154|  488154|         0|eehpc-dev-2025d03...|        0|         0|     1|         0|    0|   dev-a100-40|2026-03-11 00:00:00| genovese|     0:0|CANCELLED by 0|       NULL|         NULL|                NULL|CANCELLED|   FAILED|   Ago|    GPU|  EHPC|      0.0|     1|              0|
++------------+--------+----------+--------------------+---------+----------+------+----------+-----+--------------+-------------------+---------+--------+--------------+-----------+-------------+--------------------+---------+---------+------+-------+------+---------+------+---------------+
+only showing top 20 rows
+ ['Jan']
+ROW: Row(COMPLETED='COMPLETED', cluster='GPU', count=754)
+MSG:  \def\gpuCompletedJobs{754}
+
+ROW: Row(COMPLETED='FAILED', cluster='GPU', count=1421)
+MSG:  \def\gpuFailedJobs{1421}
+
+ROW: Row(COMPLETED='COMPLETED', cluster='ARM', count=6242)
+MSG:  \def\armCompletedJobs{6242}
+
+ROW: Row(COMPLETED='COMPLETED', cluster='AMD', count=12345)
+MSG:  \def\amdCompletedJobs{12345}
+
+ROW: Row(COMPLETED='FAILED', cluster='AMD', count=5446)
+MSG:  \def\amdFailedJobs{5446}
+
+ROW: Row(COMPLETED='FAILED', cluster='ARM', count=4051)
+MSG:  \def\armFailedJobs{4051}
+
+ ['Jan'] HOURS ARM 418133043
+ ['Jan'] HOURS AMD 137871747
+ ['Jan'] HOURS GPU 82241196
+ROW jobs: Row(cluster='ARM', count=9135)
+ROW jobs: Row(cluster='AMD', count=17578)
+ROW jobs: Row(cluster='GPU', count=1492)
+JOBS: {'ARM': 9135, 'AMD': 17578, 'GPU': 1492}
+HOURS  \def\armusedhours{116148.0675}
+
+HOURS  \def\amdusedhours{38297.7075}
+
+HOURS  \def\gpuusedhours{22844.77666666667}
+
+JOBS  \def\armJobs{9135}
+
+JOBS  \def\amdJobs{17578}
+
+JOBS  \def\gpuJobs{1492}
+
+\def\gpuJobsEuroHPC{52}
+
+\def\amdJobsEuroHPC{13932}
+
+\def\armJobsEuroHPC{4209}
+
+\def\gpuusedhoursEuroHPC{39.87555555555556}
+
+\def\amdusedhoursEuroHPC{1552.5777777777778}
+
+\def\armusedhoursEuroHPC{3177.483333333333}
+
+Trimester ['Jan']
+ROW: Row(COMPLETED='COMPLETED', cluster='GPU', count=754)
+MSG: Trimester \def\gpuCompletedJobsTrimester{754}
+
+ROW: Row(COMPLETED='FAILED', cluster='GPU', count=1421)
+MSG: Trimester \def\gpuFailedJobsTrimester{1421}
+
+ROW: Row(COMPLETED='COMPLETED', cluster='ARM', count=6242)
+MSG: Trimester \def\armCompletedJobsTrimester{6242}
+
+ROW: Row(COMPLETED='COMPLETED', cluster='AMD', count=12345)
+MSG: Trimester \def\amdCompletedJobsTrimester{12345}
+
+ROW: Row(COMPLETED='FAILED', cluster='AMD', count=5446)
+MSG: Trimester \def\amdFailedJobsTrimester{5446}
+
+ROW: Row(COMPLETED='FAILED', cluster='ARM', count=4051)
+MSG: Trimester \def\armFailedJobsTrimester{4051}
+
+ ['Jan'] HOURS ARM 418133043
+ ['Jan'] HOURS AMD 137871747
+ ['Jan'] HOURS GPU 82241196
+ROW jobs: Row(cluster='ARM', count=9135)
+ROW jobs: Row(cluster='AMD', count=17578)
+ROW jobs: Row(cluster='GPU', count=1492)
+JOBS: {'ARM': 9135, 'AMD': 17578, 'GPU': 1492}
+HOURS Trimester \def\armusedhoursTrimester{116148.0675}
+
+HOURS Trimester \def\amdusedhoursTrimester{38297.7075}
+
+HOURS Trimester \def\gpuusedhoursTrimester{22844.77666666667}
+
+JOBS Trimester \def\armJobsTrimester{9135}
+
+JOBS Trimester \def\amdJobsTrimester{17578}
+
+JOBS Trimester \def\gpuJobsTrimester{1492}
+
+\def\gpuJobsEuroHPCTrimester{52}
+
+\def\amdJobsEuroHPCTrimester{13932}
+
+\def\armJobsEuroHPCTrimester{4209}
+
+\def\gpuusedhoursEuroHPCTrimester{39.87555555555556}
+
+\def\amdusedhoursEuroHPCTrimester{1552.5777777777778}
+
+\def\armusedhoursEuroHPCTrimester{3177.483333333333}
+
+Year ['Jan']
+ROW: Row(COMPLETED='COMPLETED', cluster='GPU', count=754)
+MSG: Year \def\gpuCompletedJobsYear{754}
+
+ROW: Row(COMPLETED='FAILED', cluster='GPU', count=1421)
+MSG: Year \def\gpuFailedJobsYear{1421}
+
+ROW: Row(COMPLETED='COMPLETED', cluster='ARM', count=6242)
+MSG: Year \def\armCompletedJobsYear{6242}
+
+ROW: Row(COMPLETED='COMPLETED', cluster='AMD', count=12345)
+MSG: Year \def\amdCompletedJobsYear{12345}
+
+ROW: Row(COMPLETED='FAILED', cluster='AMD', count=5446)
+MSG: Year \def\amdFailedJobsYear{5446}
+
+ROW: Row(COMPLETED='FAILED', cluster='ARM', count=4051)
+MSG: Year \def\armFailedJobsYear{4051}
+
+ ['Jan'] HOURS ARM 418133043
+ ['Jan'] HOURS AMD 137871747
+ ['Jan'] HOURS GPU 82241196
+ROW jobs: Row(cluster='ARM', count=9135)
+ROW jobs: Row(cluster='AMD', count=17578)
+ROW jobs: Row(cluster='GPU', count=1492)
+JOBS: {'ARM': 9135, 'AMD': 17578, 'GPU': 1492}
+HOURS Year \def\armusedhoursYear{116148.0675}
+
+HOURS Year \def\amdusedhoursYear{38297.7075}
+
+HOURS Year \def\gpuusedhoursYear{22844.77666666667}
+
+JOBS Year \def\armJobsYear{9135}
+
+JOBS Year \def\amdJobsYear{17578}
+
+JOBS Year \def\gpuJobsYear{1492}
+
+\def\gpuJobsEuroHPCYear{52}
+
+\def\amdJobsEuroHPCYear{13932}
+
+\def\armJobsEuroHPCYear{4209}
+
+\def\gpuusedhoursEuroHPCYear{39.87555555555556}
+
+\def\amdusedhoursEuroHPCYear{1552.5777777777778}
+
+\def\armusedhoursEuroHPCYear{3177.483333333333}
+
