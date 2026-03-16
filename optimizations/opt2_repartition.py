@@ -6,6 +6,7 @@ import findspark
 import pyspark
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
+from pyspark import StorageLevel
 import argparse
 import calendar
 import os
@@ -25,7 +26,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     DATADIR = '/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025'
-    OUTDIR  = '/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/baseline' # change folder
+    OUTDIR  = '/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data'
 
     params = {
         # numero de contas criadas no período
@@ -242,7 +243,7 @@ if __name__ == '__main__':
           .config("spark.eventLog.enabled", "true")
           .config("executor.memory", "4g")
           .config("num.executors", "4")
-          .config("spark.eventLog.dir", f"file:///projects/F202500010HPCVLABUMINHO/uminhocp150/spark-events")  #change folder
+          .config("spark.eventLog.dir", f"file:///projects/F202500010HPCVLABUMINHO/uminhocp150/spark-events")
           .getOrCreate()
           )
 
@@ -255,7 +256,7 @@ if __name__ == '__main__':
             if f.startswith('jobs'):
                 month = "_".join(f.split("_")[1:]).split(".")[0]
                 print(f"Process: {month} {DATADIR}/{f}")
-                data = sc.read.option("delimiter","|").csv(f'{DATADIR}/{f}', inferSchema = True, header = True)
+                data = sc.read.option("delimiter","|").csv(f'{DATADIR}/{f}', inferSchema = False, header = True)
                 data = data\
                     .withColumn('EState', F.regexp_replace(F.col('State'), "CANCELLED(.*)", "CANCELLED")) \
                     .withColumn('COMPLETED', F.when( F.col('State') == 'COMPLETED' , "COMPLETED").otherwise("FAILED"))
@@ -264,6 +265,13 @@ if __name__ == '__main__':
                     nd = data
                 else:
                     nd = nd.union(data)
+
+    # ---- converter colunas numéricas de forma segura ----
+    nd = nd.withColumn("ElapsedRaw", F.expr("try_cast(ElapsedRaw as BIGINT)"))
+    nd = nd.withColumn("NNodes",     F.expr("try_cast(NNodes as BIGINT)"))
+    nd = nd.withColumn("AllocCPUS",  F.expr("try_cast(AllocCPUS as BIGINT)"))
+    # ---------------------------------------------------------------------
+
     tag = ""
     #nd.describe()
     #adicionar coluna cluster com valores ARM, AMD, GPU
@@ -320,25 +328,23 @@ if __name__ == '__main__':
     nd = nd.withColumn("totalJobSeconds",
                        (F.col('ElapsedRaw')) * F.col('VNodes')
                        )
+    
+    # Repartition to improve parallelism before caching
+    num_cores = sc.sparkContext.defaultParallelism
+    N = num_cores * 2
+    print(f"[OTIM] Repartitioning to {N} partitions (cores={num_cores})")
+    nd = nd.repartition(N)
+
+    # Persist reusable DataFrame after the main cleansing/enrichment step.
+    # This avoids recomputing the same lineage for the month/trimester/year aggregations.
+    nd = nd.persist(StorageLevel.MEMORY_AND_DISK)
 
     #                   F.regexp_extract(F.col("AllocTRES"), r"gres/gpu=(\d+)", 1))
     #nd = nd.withColumn("totalJobSeconds",
     #                   (F.col('ElapsedRaw') ) * F.col('NNodes')
     #                   )
     #nd.show()
-    print("===== DATASET SIZE =====")
-    dataset_size = nd.count()
-    print("Total rows:", dataset_size)
     cl = ['ARM', 'AMD', 'GPU']
-
-    print("===== EXECUTION PLAN: FILTER + GROUPBY =====")
-   #added by Pheak to check if the filter and groupby are using the partitioning and if the shuffle is avoided
-    nd.filter(F.col("Agency") != "LOCAL") \
-    .groupBy("cluster") \
-    .count() \
-    .explain("extended")
-    nd.show()
-
 
 
     for tag,months in tag_month.items():
@@ -411,5 +417,6 @@ if __name__ == '__main__':
     for k, v in params.items():
         msg = f"\def\{k}{{{v}}}\n"
         wfile.write(msg)
-    wfile.close()
-
+    
+    nd.unpersist()  # libertar cache Spark
+    wfile.close() 

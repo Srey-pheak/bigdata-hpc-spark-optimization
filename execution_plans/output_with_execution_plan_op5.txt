@@ -1,0 +1,177 @@
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt5_final.py:100: SyntaxWarning: invalid escape sequence '\i'
+  'monthhours': '{\inteval{\\ndays * 24}}',
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt5_final.py:101: SyntaxWarning: invalid escape sequence '\i'
+  'hoursTrimester': '{\inteval{\\ndaysTrimester * 24}}',
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt5_final.py:102: SyntaxWarning: invalid escape sequence '\i'
+  'hoursYear': '{\inteval{\\ndaysYear * 24}}'
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/03/16 11:46:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/03/16 11:47:07 WARN FileStreamSink: Assume no metadata directory. Error while looking for metadata directory in the path: /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_*.txt.
+java.io.FileNotFoundException: File /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_*.txt does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:980)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1301)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:970)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.spark.sql.execution.streaming.sinks.FileStreamSink$.hasMetadata(FileStreamSink.scala:58)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:384)
+	at org.apache.spark.sql.catalyst.analysis.ResolveDataSource.org$apache$spark$sql$catalyst$analysis$ResolveDataSource$$loadV1BatchSource(ResolveDataSource.scala:143)
+	at org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.$anonfun$applyOrElse$2(ResolveDataSource.scala:61)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:61)
+	at org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:45)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$3(AnalysisHelper.scala:139)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:107)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$1(AnalysisHelper.scala:139)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.allowInvokingTransformsInAnalyzer(AnalysisHelper.scala:416)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning(AnalysisHelper.scala:135)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning$(AnalysisHelper.scala:131)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUpWithPruning(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp(AnalysisHelper.scala:112)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp$(AnalysisHelper.scala:111)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUp(LogicalPlan.scala:37)
+	at org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:45)
+	at org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:43)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$2(RuleExecutor.scala:248)
+	at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+	at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+	at scala.collection.immutable.List.foldLeft(List.scala:79)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1(RuleExecutor.scala:245)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1$adapted(RuleExecutor.scala:237)
+	at scala.collection.immutable.List.foreach(List.scala:323)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:237)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.org$apache$spark$sql$catalyst$analysis$Analyzer$$executeSameContext(Analyzer.scala:343)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$execute$1(Analyzer.scala:339)
+	at org.apache.spark.sql.catalyst.analysis.AnalysisContext$.withNewAnalysisContext(Analyzer.scala:224)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:339)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:289)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$executeAndTrack$1(RuleExecutor.scala:207)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+	at org.apache.spark.sql.catalyst.rules.RuleExecutor.executeAndTrack(RuleExecutor.scala:207)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:236)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:91)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:122)
+	at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:84)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:322)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:322)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:139)
+	at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:330)
+	at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:717)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:330)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:329)
+	at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:139)
+	at scala.util.Try$.apply(Try.scala:217)
+	at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1392)
+	at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+	at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+	at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:150)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:90)
+	at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:114)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+	at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:112)
+	at org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:108)
+	at org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:57)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:392)
+	at org.apache.spark.sql.classic.DataFrameReader.csv(DataFrameReader.scala:258)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                        (0 + 48) / 48][Stage 1:>                (0 + 48) / 48][Stage 2:>                 (0 + 0) / 24][Stage 1:>                (0 + 48) / 48][Stage 2:>                 (0 + 2) / 24][Stage 1:========>       (26 + 22) / 48][Stage 2:>                (0 + 24) / 24]                                                                                [Stage 2:==>                                                      (1 + 23) / 24][Stage 2:=========>                                               (4 + 20) / 24][Stage 2:===========>                                             (5 + 19) / 24][Stage 2:================>                                        (7 + 17) / 24][Stage 2:===================>                                     (8 + 16) / 24][Stage 2:=========================>                              (11 + 13) / 24][Stage 4:>                                                        (0 + 48) / 96][Stage 4:================================>                       (56 + 40) / 96][Stage 4:==============================================>         (79 + 17) / 96][Stage 6:>                                                        (0 + 48) / 96][Stage 6:=======================>                                (40 + 50) / 96][Stage 6:=============================================>          (78 + 18) / 96]                                                                                ===== EXECUTION PLAN: FILTER + GROUPBY =====
+== Parsed Logical Plan ==
+'Aggregate ['cluster], ['cluster, 'count(1) AS count#122]
++- Filter NOT (Agency#42 = LOCAL)
+   +- Project [Period#37, State#30, EState#35, COMPLETED#36, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, totalJobSeconds#44L, tag#46]
+      +- Join Inner, (Period#37 = Period#45)
+         :- Repartition 96, true
+         :  +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, (ElapsedRaw#38L * VNodes#43L) AS totalJobSeconds#44L]
+         :     +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN isnull(AllocTRES#33) THEN NNodes#39L ELSE CASE WHEN RLIKE(AllocTRES#33, gres/gpu=(\d+)) THEN cast(regexp_extract(AllocTRES#33, gres/gpu=(\d+), 1) as bigint) ELSE (NNodes#39L * cast(4 as bigint)) END END ELSE NNodes#39L END AS VNodes#43L]
+         :        +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, CASE WHEN StartsWith(Account#20, f) THEN FCT ELSE CASE WHEN StartsWith(Account#20, ee) THEN EHPC ELSE LOCAL END END AS Agency#42]
+         :           +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#41]
+         :              +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33]
+         :                 +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#38L, Account#20, try_cast(AllocCPUS#21 as bigint) AS AllocCPUS#40L, CPUTimeRAW#22, NNodes#39L, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+         :                    +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#38L, Account#20, AllocCPUS#21, CPUTimeRAW#22, try_cast(NNodes#23 as bigint) AS NNodes#39L, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+         :                       +- Project [JobID#17, JobIDRaw#18, try_cast(ElapsedRaw#19 as bigint) AS ElapsedRaw#38L, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+         :                          +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, regexp_extract(input_file_name(), jobs_(\w+)\.txt, 1) AS Period#37]
+         :                             +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, CASE WHEN (State#30 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#36]
+         :                                +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, regexp_replace(State#30, CANCELLED(.*), CANCELLED, 1) AS EState#35]
+         :                                   +- Relation [JobID#17,JobIDRaw#18,ElapsedRaw#19,Account#20,AllocCPUS#21,CPUTimeRAW#22,NNodes#23,AllocNodes#24,NCPUS#25,Partition#26,TotalCPU#27,User#28,ExitCode#29,State#30,Reservation#31,ReservationId#32,AllocTRES#33] csv
+         +- ResolvedHint (strategy=broadcast)
+            +- LogicalRDD [Period#45, tag#46], false
+
+== Analyzed Logical Plan ==
+cluster: string, count: bigint
+Aggregate [cluster#41], [cluster#41, count(1) AS count#122L]
++- Filter NOT (Agency#42 = LOCAL)
+   +- Project [Period#37, State#30, EState#35, COMPLETED#36, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, totalJobSeconds#44L, tag#46]
+      +- Join Inner, (Period#37 = Period#45)
+         :- Repartition 96, true
+         :  +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, (ElapsedRaw#38L * VNodes#43L) AS totalJobSeconds#44L]
+         :     +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN isnull(AllocTRES#33) THEN NNodes#39L ELSE CASE WHEN RLIKE(AllocTRES#33, gres/gpu=(\d+)) THEN cast(regexp_extract(AllocTRES#33, gres/gpu=(\d+), 1) as bigint) ELSE (NNodes#39L * cast(4 as bigint)) END END ELSE NNodes#39L END AS VNodes#43L]
+         :        +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, CASE WHEN StartsWith(Account#20, f) THEN FCT ELSE CASE WHEN StartsWith(Account#20, ee) THEN EHPC ELSE LOCAL END END AS Agency#42]
+         :           +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#41]
+         :              +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33]
+         :                 +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#38L, Account#20, try_cast(AllocCPUS#21 as bigint) AS AllocCPUS#40L, CPUTimeRAW#22, NNodes#39L, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+         :                    +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#38L, Account#20, AllocCPUS#21, CPUTimeRAW#22, try_cast(NNodes#23 as bigint) AS NNodes#39L, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+         :                       +- Project [JobID#17, JobIDRaw#18, try_cast(ElapsedRaw#19 as bigint) AS ElapsedRaw#38L, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, Period#37]
+         :                          +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, COMPLETED#36, regexp_extract(input_file_name(), jobs_(\w+)\.txt, 1) AS Period#37]
+         :                             +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, EState#35, CASE WHEN (State#30 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#36]
+         :                                +- Project [JobID#17, JobIDRaw#18, ElapsedRaw#19, Account#20, AllocCPUS#21, CPUTimeRAW#22, NNodes#23, AllocNodes#24, NCPUS#25, Partition#26, TotalCPU#27, User#28, ExitCode#29, State#30, Reservation#31, ReservationId#32, AllocTRES#33, regexp_replace(State#30, CANCELLED(.*), CANCELLED, 1) AS EState#35]
+         :                                   +- Relation [JobID#17,JobIDRaw#18,ElapsedRaw#19,Account#20,AllocCPUS#21,CPUTimeRAW#22,NNodes#23,AllocNodes#24,NCPUS#25,Partition#26,TotalCPU#27,User#28,ExitCode#29,State#30,Reservation#31,ReservationId#32,AllocTRES#33] csv
+         +- ResolvedHint (strategy=broadcast)
+            +- LogicalRDD [Period#45, tag#46], false
+
+== Optimized Logical Plan ==
+Aggregate [cluster#41], [cluster#41, count(1) AS count#122L]
++- Project [cluster#41]
+   +- Filter NOT (Agency#42 = LOCAL)
+      +- InMemoryRelation [Period#37, State#30, EState#35, COMPLETED#36, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, totalJobSeconds#44L, tag#46], StorageLevel(disk, memory, 1 replicas)
+            +- AdaptiveSparkPlan isFinalPlan=false
+               +- Project [Period#37, State#30, EState#35, COMPLETED#36, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, totalJobSeconds#44L, tag#46]
+                  +- BroadcastHashJoin [Period#37], [Period#45], Inner, BuildRight, false
+                     :- Exchange RoundRobinPartitioning(96), REPARTITION_BY_NUM, [plan_id=51]
+                     :  +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, (ElapsedRaw#38L * VNodes#43L) AS totalJobSeconds#44L]
+                     :     +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN isnull(AllocTRES#33) THEN NNodes#39L ELSE CASE WHEN RLIKE(AllocTRES#33, gres/gpu=(\d+)) THEN cast(regexp_extract(AllocTRES#33, gres/gpu=(\d+), 1) as bigint) ELSE (NNodes#39L * 4) END END ELSE NNodes#39L END AS VNodes#43L]
+                     :        +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, try_cast(ElapsedRaw#19 as bigint) AS ElapsedRaw#38L, try_cast(NNodes#23 as bigint) AS NNodes#39L, try_cast(AllocCPUS#21 as bigint) AS AllocCPUS#40L, AllocTRES#33, CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#41, CASE WHEN StartsWith(Account#20, f) THEN FCT ELSE CASE WHEN StartsWith(Account#20, ee) THEN EHPC ELSE LOCAL END END AS Agency#42]
+                     :           +- Project [ElapsedRaw#19, Account#20, AllocCPUS#21, NNodes#23, Partition#26, State#30, AllocTRES#33, regexp_replace(State#30, CANCELLED(.*), CANCELLED, 1) AS EState#35, CASE WHEN (State#30 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#36, regexp_extract(input_file_name(), jobs_(\w+)\.txt, 1) AS Period#37]
+                     :              +- FileScan csv [ElapsedRaw#19,Account#20,AllocCPUS#21,NNodes#23,Partition#26,State#30,AllocTRES#33] Batched: false, DataFilters: [], Format: CSV, Location: InMemoryFileIndex(12 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Ago..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<ElapsedRaw:string,Account:string,AllocCPUS:string,NNodes:string,Partition:string,State:str...
+                     +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, string, false]),false), [plan_id=57]
+                        +- Filter isnotnull(Period#45)
+                           +- Scan ExistingRDD[Period#45,tag#46]
+
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=false
++- HashAggregate(keys=[cluster#41], functions=[count(1)], output=[cluster#41, count#122L])
+   +- Exchange hashpartitioning(cluster#41, 8), ENSURE_REQUIREMENTS, [plan_id=75]
+      +- HashAggregate(keys=[cluster#41], functions=[partial_count(1)], output=[cluster#41, count#365L])
+         +- Project [cluster#41]
+            +- Filter NOT (Agency#42 = LOCAL)
+               +- InMemoryTableScan [Agency#42, cluster#41], [NOT (Agency#42 = LOCAL)]
+                     +- InMemoryRelation [Period#37, State#30, EState#35, COMPLETED#36, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, totalJobSeconds#44L, tag#46], StorageLevel(disk, memory, 1 replicas)
+                           +- AdaptiveSparkPlan isFinalPlan=false
+                              +- Project [Period#37, State#30, EState#35, COMPLETED#36, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, totalJobSeconds#44L, tag#46]
+                                 +- BroadcastHashJoin [Period#37], [Period#45], Inner, BuildRight, false
+                                    :- Exchange RoundRobinPartitioning(96), REPARTITION_BY_NUM, [plan_id=51]
+                                    :  +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, VNodes#43L, (ElapsedRaw#38L * VNodes#43L) AS totalJobSeconds#44L]
+                                    :     +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, ElapsedRaw#38L, NNodes#39L, AllocCPUS#40L, AllocTRES#33, cluster#41, Agency#42, CASE WHEN Contains(Partition#26, a100) THEN CASE WHEN isnull(AllocTRES#33) THEN NNodes#39L ELSE CASE WHEN RLIKE(AllocTRES#33, gres/gpu=(\d+)) THEN cast(regexp_extract(AllocTRES#33, gres/gpu=(\d+), 1) as bigint) ELSE (NNodes#39L * 4) END END ELSE NNodes#39L END AS VNodes#43L]
+                                    :        +- Project [State#30, EState#35, COMPLETED#36, Period#37, Account#20, Partition#26, try_cast(ElapsedRaw#19 as bigint) AS ElapsedRaw#38L, try_cast(NNodes#23 as bigint) AS NNodes#39L, try_cast(AllocCPUS#21 as bigint) AS AllocCPUS#40L, AllocTRES#33, CASE WHEN Contains(Partition#26, arm) THEN ARM ELSE CASE WHEN Contains(Partition#26, a100) THEN GPU ELSE AMD END END AS cluster#41, CASE WHEN StartsWith(Account#20, f) THEN FCT ELSE CASE WHEN StartsWith(Account#20, ee) THEN EHPC ELSE LOCAL END END AS Agency#42]
+                                    :           +- Project [ElapsedRaw#19, Account#20, AllocCPUS#21, NNodes#23, Partition#26, State#30, AllocTRES#33, regexp_replace(State#30, CANCELLED(.*), CANCELLED, 1) AS EState#35, CASE WHEN (State#30 = COMPLETED) THEN COMPLETED ELSE FAILED END AS COMPLETED#36, regexp_extract(input_file_name(), jobs_(\w+)\.txt, 1) AS Period#37]
+                                    :              +- FileScan csv [ElapsedRaw#19,Account#20,AllocCPUS#21,NNodes#23,Partition#26,State#30,AllocTRES#33] Batched: false, DataFilters: [], Format: CSV, Location: InMemoryFileIndex(12 paths)[file:/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Ago..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<ElapsedRaw:string,Account:string,AllocCPUS:string,NNodes:string,Partition:string,State:str...
+                                    +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, string, false]),false), [plan_id=57]
+                                       +- Filter isnotnull(Period#45)
+                                          +- Scan ExistingRDD[Period#45,tag#46]
+

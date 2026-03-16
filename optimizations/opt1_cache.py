@@ -6,6 +6,7 @@ import findspark
 import pyspark
 from pyspark.sql import SparkSession
 import pyspark.sql.functions as F
+from pyspark import StorageLevel
 import argparse
 import calendar
 import os
@@ -25,26 +26,26 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     DATADIR = '/projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025'
-    OUTDIR  = '/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/baseline' # change folder
+    OUTDIR  = '/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data'
 
     params = {
-        # numero de contas criadas no período
+        # number of accounts created in the period
         #'newaccounts': 0,
 
-        # numero de projetos euroHPC criadas no período
+        # number of EuroHPC projects created in the period
         #'neweurohpcprojecs': 0,
-        # numero de projetos nacionais criadas no período
+        # number of national projects created in the period
         #'newnationalprojects': 0,
 
         'reportPeriod': 0,
         'reportPeriodTrimester': 0,
         'reportPeriodYear': 0,
-        # mes do report
+        # report month
         'reportMonth': 0,
-        # ano do report
+        # report year
         'reportYear': 0,
 
-        # definicoes da maquina
+        # machine definitions
         'armnodes': 1632,
         'amdnodes': 500,
         'gpunodes': 132,
@@ -58,18 +59,18 @@ if __name__ == '__main__':
         'amdusedhours': 0,
         'gpuusedhours': 0,
 
-        # numero de horas utilizadas pelos jobs de projetos eurohpc
+        # number of hours used by EuroHPC project jobs
         'gpuusedhoursEuroHPC': 0,
         'amdusedhoursEuroHPC': 0,
         'armusedhoursEuroHPC': 0,
 
-        # numero de jobs
+        # number of jobs
         'armJobs': 0,
         'amdJobs': 0,
         'gpuJobs': 0,
 
-        # numero de jobs concluidos com sucesso
-        # numero de jobs que falharam
+        # number of successfully completed jobs
+        # number of failed jobs
         'gpuCompletedJobs': 0,
         'gpuFailedJobs': 0,
         'armCompletedJobs': 0,
@@ -77,7 +78,7 @@ if __name__ == '__main__':
         'amdFailedJobs': 0,
         'armFailedJobs': 0,
 
-        # numero de jobs concluidos com sucesso de projetos EuroHPC
+        # number of successfully completed EuroHPC project jobs
         'gpuJobsEuroHPC': 0,
         'amdJobsEuroHPC': 0,
         'armJobsEuroHPC': 0,
@@ -110,25 +111,25 @@ if __name__ == '__main__':
         'amdJobsEuroHPCTrimester': 0,
         'armJobsEuroHPCTrimester': 0,
 
-        # numero de horas utilizadas pelos jobs de projetos eurohpc
+        # number of hours used by EuroHPC project jobs
         # 'armusedhoursEuroHPCTrimester': 0,
         # 'amdusedhoursEuroHPCTrimester': 0,
         # 'gpuusedhoursEuroHPCTrimester': 0,
 
-        # numero de jobs
+        # number of jobs
         # 'gpuJobsTrimester{ 6515 }
         # 'armJobsTrimester{ 18821 }
         # 'amdJobsTrimester{ 83036 }
-        # numero de jobs concluidos com sucesso
+        # number of successfully completed jobs
         # 'gpuCompletedJobsTrimester{ 4122 }
         # 'armCompletedJobsTrimester{ 15498 }
         # 'amdCompletedJobsTrimester{ 59670 }
-        # numero de jobs que falharam
+        # number of failed jobs
         # 'gpuFailedJobsTrimester{ 671 }
         # 'armFailedJobsTrimester{ 1372 }
         # 'amdFailedJobsTrimester{ 12715 }
 
-        # numero de jobs concluidos com sucesso de projetos EuroHPC
+        # number of successfully completed EuroHPC project jobs
         # 'armuJobsEuroHPCTrimester{ 94 }
         ##'amdJobsEuroHPCTrimester{ 694 }
         # 'gpuJobsEuroHPCTrimester{ 144 }
@@ -242,12 +243,12 @@ if __name__ == '__main__':
           .config("spark.eventLog.enabled", "true")
           .config("executor.memory", "4g")
           .config("num.executors", "4")
-          .config("spark.eventLog.dir", f"file:///projects/F202500010HPCVLABUMINHO/uminhocp150/spark-events")  #change folder
+          .config("spark.eventLog.dir", f"file:///projects/F202500010HPCVLABUMINHO/uminhocp150/spark-events")
           .getOrCreate()
           )
 
 
-    #load all files from DATADIR starting with jobs_*
+    # Load all files from DATADIR starting with jobs_*
     nd = None
     for root, dirs, files in os.walk(DATADIR):
         for f in files:
@@ -255,7 +256,7 @@ if __name__ == '__main__':
             if f.startswith('jobs'):
                 month = "_".join(f.split("_")[1:]).split(".")[0]
                 print(f"Process: {month} {DATADIR}/{f}")
-                data = sc.read.option("delimiter","|").csv(f'{DATADIR}/{f}', inferSchema = True, header = True)
+                data = sc.read.option("delimiter","|").csv(f'{DATADIR}/{f}', inferSchema = False, header = True)
                 data = data\
                     .withColumn('EState', F.regexp_replace(F.col('State'), "CANCELLED(.*)", "CANCELLED")) \
                     .withColumn('COMPLETED', F.when( F.col('State') == 'COMPLETED' , "COMPLETED").otherwise("FAILED"))
@@ -264,9 +265,15 @@ if __name__ == '__main__':
                     nd = data
                 else:
                     nd = nd.union(data)
+
+    # Safe numeric column casting
+    nd = nd.withColumn("ElapsedRaw", F.expr("try_cast(ElapsedRaw as BIGINT)"))
+    nd = nd.withColumn("NNodes",     F.expr("try_cast(NNodes as BIGINT)"))
+    nd = nd.withColumn("AllocCPUS",  F.expr("try_cast(AllocCPUS as BIGINT)"))
+
     tag = ""
     #nd.describe()
-    #adicionar coluna cluster com valores ARM, AMD, GPU
+    # Add cluster column with values ARM, AMD, GPU
     nd = nd.withColumn("cluster",
         F.when(
             F.col('Partition').contains("arm"), "ARM"
@@ -278,7 +285,7 @@ if __name__ == '__main__':
         )
     )
 
-    #Adicionar coluna Agency com valores FCT, EHPC, LOCAL
+    # Add Agency column with values FCT, EHPC, LOCAL
     nd = nd.withColumn("Agency",
                         F.when(
                             F.col('Account').startswith("f"), "FCT"
@@ -288,7 +295,7 @@ if __name__ == '__main__':
                             ).otherwise("LOCAL")
                         ))
 
-    #Adicionar coluna NNodes com o numero de nodos alocados por causa de os nó GPU não ser exclusivo
+    # Add NNodes with number of allocated nodes (GPU nodes are not exclusive)
     nd = nd.withColumn("OldVNodes", F.when(
              F.col("Partition").contains("a100"),
                 F.when(
@@ -298,7 +305,7 @@ if __name__ == '__main__':
                             (F.cast(int , F.col('AllocCPUS')/32)+1))
         ).otherwise(F.col("NNodes")))
 
-    #Forma do calcular os nós usados nos jobs com GPU
+    # Calculate virtual nodes used in GPU jobs
     nd = nd.withColumn("VNodes", F.when(
              F.col("Partition").contains("a100"),
                 F.when(
@@ -308,7 +315,7 @@ if __name__ == '__main__':
                         F.when(F.col("AllocTRES").rlike( r"gres/gpu=(\d+)") ,
                             F.regexp_extract(F.col("AllocTRES"), r"gres/gpu=(\d+)", 1)
                         ).otherwise(
-                            F.col("NNodes")*4 #antes de ter este valor usava todo o nó
+                            F.col("NNodes")*4 # before having this value, the whole node was used
                         )
                 )
              ).otherwise(
@@ -316,29 +323,33 @@ if __name__ == '__main__':
             )
         )
 
-    #Adicionar coluna totalJobSeconds = ElapsedRaw * NNodes
+    # Add totalJobSeconds column = ElapsedRaw * VNodes
     nd = nd.withColumn("totalJobSeconds",
                        (F.col('ElapsedRaw')) * F.col('VNodes')
                        )
+
+    # =====================================================================
+    # CACHE OPTIMIZATION: persist the enriched DataFrame to memory and disk.
+    # The DataFrame 'nd' is reused multiple times in the loop below (once per
+    # time window: month, trimester, year) with several groupBy aggregations
+    # each iteration.  Without caching, Spark would re-read the CSV files and
+    # recompute every transformation from scratch for each action.
+    # MEMORY_AND_DISK ensures partitions that don't fit in memory spill to
+    # disk instead of being recomputed.
+    # =====================================================================
+    nd = nd.persist(StorageLevel.MEMORY_AND_DISK)
 
     #                   F.regexp_extract(F.col("AllocTRES"), r"gres/gpu=(\d+)", 1))
     #nd = nd.withColumn("totalJobSeconds",
     #                   (F.col('ElapsedRaw') ) * F.col('NNodes')
     #                   )
     #nd.show()
-    print("===== DATASET SIZE =====")
-    dataset_size = nd.count()
-    print("Total rows:", dataset_size)
     cl = ['ARM', 'AMD', 'GPU']
-
-    print("===== EXECUTION PLAN: FILTER + GROUPBY =====")
-   #added by Pheak to check if the filter and groupby are using the partitioning and if the shuffle is avoided
-    nd.filter(F.col("Agency") != "LOCAL") \
-    .groupBy("cluster") \
-    .count() \
-    .explain("extended")
+    print("===== EXECUTION PLAN =====")
+    nd.groupby('EState').count().explain("extended")
+    nd.groupby('EState').count().show()
+    print(f"1. {nd.count()}")
     nd.show()
-
 
 
     for tag,months in tag_month.items():
@@ -358,7 +369,7 @@ if __name__ == '__main__':
             print(f"MSG: {tag} {msg}")
             #x=wfile.write(msg)
             #print(f"write {x}")
-        #ignoring local consumed hours
+        # Ignoring local consumed hours
         for c in cl:
             #hours[c] = nd.filter(F.col('Period').isin(months)).groupby("cluster").sum().filter(F.col("cluster") == c).collect()[0].asDict()['sum(ElapsedRaw)']
             hours[c] = \
@@ -366,7 +377,7 @@ if __name__ == '__main__':
                 .groupby("cluster").sum().filter(F.col("cluster") == c)\
                 .collect()[0].asDict()['sum(totalJobSeconds)']
             print(f" {months} HOURS {c} {hours[c]}")
-        #ignoring local consumed hours
+        # Ignoring local consumed hours
         for row in nd.filter(F.col("Agency") != 'LOCAL').filter(F.col('Period').isin(months))\
                 .groupby("cluster").count().collect():
             print(f"ROW jobs: {row}")
@@ -411,5 +422,9 @@ if __name__ == '__main__':
     for k, v in params.items():
         msg = f"\def\{k}{{{v}}}\n"
         wfile.write(msg)
-    wfile.close()
 
+    # Release the cached DataFrame from memory/disk now that all
+    # aggregations are complete.  This frees Spark storage for any
+    # subsequent operations or a clean shutdown.
+    nd.unpersist()
+    wfile.close()

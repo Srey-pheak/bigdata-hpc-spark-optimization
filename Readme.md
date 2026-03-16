@@ -16,9 +16,12 @@ The project includes:
 - Baseline Spark implementation
 - Multiple optimisation experiments
 - Event log analysis scripts
+- System-level resource monitoring
 - Final performance report
 
 ---
+
+
 
 ## Repository Structure
 
@@ -28,25 +31,41 @@ The project includes:
 ├── .gitignore
 │
 ├── baseline/
-│   ├── statsEHPC_v2_init.py        # Original unoptimised script
-│   ├── execution_plan_base.txt     # Spark explain() output for baseline
-│   ├── baseline_run1_pidstat.txt   # CPU/RAM measurements run 1
-│   ├── baseline_run2_pidstat.txt   # CPU/RAM measurements run 2
-│   └── baseline_run3_pidstat.txt   # CPU/RAM measurements run 3
+│ └── statsEHPC_v2_init.py # Original unoptimised script
 │
 ├── optimizations/
-│   ├── opt1_cache.py               # Opt 1 — DataFrame caching
-│   ├── opt2_repartition.py         # Opt 2 — Repartitioning
-│   ├── opt3_cache_repartition.py   # Opt 3 — Cache + Repartition combined
-│   ├── opt4_wildcard_pruning.py    # Opt 4 — Wildcard read + column pruning
-│   └── opt5_final.py               # Opt 5 — All optimisations combined
+│ ├── opt1_cache.py # Opt 1 — DataFrame caching
+│ ├── opt2_repartition.py # Opt 2 — Repartitioning
+│ ├── opt3_cache_repartition.py # Opt 3 — Cache + Repartition combined
+│ ├── opt4_wildcard_pruning.py # Opt 4 — Wildcard read + column pruning
+│ └── opt5_final.py # Opt 5 — All optimisations combined
+│
+├── execution_plans/
+│ ├── execution_plan_baseline.txt
+│ ├── execution_plan_opt1.txt
+│ ├── execution_plan_opt2.txt
+│ ├── execution_plan_opt3.txt
+│ ├── execution_plan_opt4.txt
+│ └── execution_plan_final.txt
+│
+├── pidstat/
+│ ├── baseline_run1_pidstat.txt
+│ ├── baseline_run2_pidstat.txt
+│ ├── baseline_run3_pidstat.txt
+│ ├── op1_1.txt
+│ ├── op1_2.txt
+│ ├── op1_4.txt
+│ └── ...
 │
 ├── analysis/
-│   ├── parse_event_log.py          # Spark event log parser
-│   └── metrics.csv                 # All run results (baseline + optimisations)
+│ ├── parse_event_log.py # Spark event log parser
+│ ├── metrics.csv # Aggregated metrics for all runs
+│
 │
 └── report/
-    └── report.pdf                  # Final submitted report
+└── report.pdf # Final submitted report
+
+
 ```
 
 ---
@@ -83,7 +102,7 @@ Use the same protocol as the baseline. Example for **opt1** (repeat for opt2 thr
 # Run 1
 pidstat -u -r 5 > analysis/opt1_run1_pidstat.txt &
 PIDSTAT_PID=$!
-time python optimizations/opt1_cache.py -m Jan > output_with_execution_plan_opt1.txt 2>&1
+time python optimization/opt1_cache.py -m Jan > output_with_execution_plan_opt1.txt 2>&1
 kill $PIDSTAT_PID
 ```
 
@@ -114,8 +133,8 @@ Example:
 # decompress (example for .zstd)
 zstd -d eventlog.zstd -o eventlog.json
 
-# run parser
-python analysis/parse_event_log.py eventlog.json baseline_run1
+# run parser , Inside dir of the 
+python analysis/parse_event_log.py ../../spark-events/Baseline_1_log/events_log.json baseline_run1
 
 # change the run label (e.g., baseline_run1, opt1_run1, opt2_run1)
 # to match the corresponding experiment

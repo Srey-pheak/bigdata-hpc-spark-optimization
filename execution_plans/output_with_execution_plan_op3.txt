@@ -1,0 +1,49 @@
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt3_cache_repartition.py:117: SyntaxWarning: invalid escape sequence '\i'
+  'monthhours': '{\inteval{\\ndays * 24}}',
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt3_cache_repartition.py:118: SyntaxWarning: invalid escape sequence '\i'
+  'hoursTrimester': '{\inteval{\\ndaysTrimester * 24}}',
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt3_cache_repartition.py:119: SyntaxWarning: invalid escape sequence '\i'
+  'hoursYear': '{\inteval{\\ndaysYear * 24}}'
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt3_cache_repartition.py:337: SyntaxWarning: invalid escape sequence '\{'
+  msg = f"\def\{k}{{{v}}}\n"
+/projects/F202500010HPCVLABUMINHO/uminhocp150/big_data/optimization/opt3_cache_repartition.py:337: SyntaxWarning: invalid escape sequence '\d'
+  msg = f"\def\{k}{{{v}}}\n"
+WARNING: Using incubator modules: jdk.incubator.vector
+Warning: Ignoring non-Spark config property: executor.memory
+Warning: Ignoring non-Spark config property: num.executors
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/03/16 11:23:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                26/03/16 11:23:45 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 12:>                                                       (0 + 48) / 48][Stage 12:>               (0 + 48) / 48][Stage 13:>                (0 + 0) / 24][Stage 12:====>          (14 + 34) / 48][Stage 13:>               (0 + 14) / 24][Stage 12:===========>   (37 + 11) / 48][Stage 13:>               (0 + 24) / 24]                                                                                [Stage 13:>                                                       (0 + 24) / 24][Stage 13:==>                                                     (1 + 23) / 24][Stage 13:====>                                                   (2 + 22) / 24][Stage 13:=========>                                              (4 + 20) / 24][Stage 13:===========>                                            (5 + 19) / 24][Stage 13:==============>                                         (6 + 18) / 24][Stage 13:================>                                       (7 + 17) / 24][Stage 13:===========================>                           (12 + 12) / 24][Stage 13:=======================================>                (17 + 7) / 24][Stage 15:>                                                       (0 + 48) / 96][Stage 15:================>                                      (28 + 48) / 96][Stage 15:==========================================>            (75 + 21) / 96][Stage 17:>                                                       (0 + 48) / 96][Stage 17:==============>                                        (26 + 48) / 96][Stage 17:================================================>      (85 + 11) / 96]                                                                                MONTH : Feb 1 
+ ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+MONTH2 : Jan 0 
+smonth 2026-01-01 -- emonthd 2026-01-31 -- emonth 2026-02-01 -- tmonth 2026-01-01
+FIND SPARK
+/projects/F202500010HPCVLABUMINHO/uminhocp150/ADGD/env-spark/lib/python3.12/site-packages/pyspark
+jobs_Ago.txt
+Process: Ago /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Ago.txt
+jobs_Jul.txt
+Process: Jul /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jul.txt
+jobs_Apr.txt
+Process: Apr /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Apr.txt
+jobs_Sep.txt
+Process: Sep /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Sep.txt
+jobs_Oct.txt
+Process: Oct /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Oct.txt
+jobs_Mar.txt
+Process: Mar /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Mar.txt
+jobs_Jan.txt
+Process: Jan /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jan.txt
+jobs_Feb.txt
+Process: Feb /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Feb.txt
+jobs_Nov.txt
+Process: Nov /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Nov.txt
+jobs_May.txt
+Process: May /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_May.txt
+jobs_Dec.txt
+Process: Dec /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Dec.txt
+jobs_Jun.txt
+Process: Jun /projects/F202500010HPCVLABUMINHO/DataSets/Reports/2025/jobs_Jun.txt
+[OTIM] Repartitioning to 96 partitions (cores=48)
