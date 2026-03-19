@@ -60,10 +60,7 @@ The project includes:
 ├── analysis/
 │ ├── parse_event_log.py # Spark event log parser
 │ ├── metrics.csv # Aggregated metrics for all runs
-│
-│
-└── report/
-└── report.pdf # Final submitted report
+
 
 
 ```
